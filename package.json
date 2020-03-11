@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "",
   "keywords": [],
-  "main": "",
+  "main": "./index.ts",
   "module": "./types/src/index.ts",
   "typings": "./types/index.d.ts",
   "files": [
