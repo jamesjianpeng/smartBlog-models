@@ -4,8 +4,8 @@
   "description": "",
   "keywords": [],
   "main": "",
-  "module": "./dist/types/src/index.ts",
-  "typings": "./dist/types/index.d.ts",
+  "module": "./types/src/index.ts",
+  "typings": "./types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -20,7 +20,6 @@
   },
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
-    "prebuild": "npm install -g typescript && npm run build",
     "build": "tsc",
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest --coverage",
