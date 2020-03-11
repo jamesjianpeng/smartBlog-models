@@ -3,11 +3,11 @@
   "version": "1.0.7",
   "description": "",
   "keywords": [],
-  "main": "./index.ts",
+  "main": "./types/src/index.ts",
   "module": "./types/src/index.ts",
   "typings": "./types/index.d.ts",
   "files": [
-    "dist"
+    "types/"
   ],
   "author": "jamesjianpeng jamesjianpeng@gmail.com",
   "repository": {
