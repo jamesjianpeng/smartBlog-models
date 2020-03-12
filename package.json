@@ -6,9 +6,6 @@
   "main": "",
   "module": "./index.ts",
   "typings": "dist/types/smartblog-models.d.ts",
-  "files": [
-    "dist"
-  ],
   "author": "jamesjianpeng jamesjianpeng@gmail.com",
   "repository": {
     "type": "git",
@@ -22,12 +19,8 @@
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
-    "start": "rollup -c rollup.config.ts -w",
     "test": "jest --coverage",
-    "test:watch": "jest --coverage --watch",
-    "test:prod": "npm run lint && npm run test -- --no-cache",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "commit": "git-cz",
     "semantic-release": "semantic-release",
     "precommit": "lint-staged",
     "travis-deploy-once": "travis-deploy-once"
