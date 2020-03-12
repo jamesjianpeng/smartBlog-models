@@ -16,7 +16,7 @@
 > 2. 可以直接修改 package.json 中的 version 不需要使用 npm version patch 
 
 - publish
-> 首次发布之前需要注意 package.json 的包名，不能使用的名字，vscode 会标黄，强行 publish 会提示 400 
+> 首次发布之前需要注意 package.json 的包名，不能使用的名字，vscode 会标黄，强行 publish 会提示 400 ;
 > 发布之前需要提交或清除git工作区的内容，并且每次发布都要修改 version
 
 > 1. npm publish  (发布正式版本)
