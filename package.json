@@ -30,7 +30,6 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "precommit": "lint-staged",
-    "postinstall": "ts-node tools/init",
     "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {
