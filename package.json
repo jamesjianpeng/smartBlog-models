@@ -15,16 +15,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "scripts": {
-    "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
-    "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
-    "test": "jest --coverage",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "semantic-release": "semantic-release",
-    "precommit": "lint-staged",
-    "travis-deploy-once": "travis-deploy-once"
-  },
+  "scripts": {},
   "lint-staged": {
     "{src,test}/**/*.ts": [
       "prettier --write",
