@@ -18,8 +18,22 @@
 - publish
 > 首次发布之前需要注意 package.json 的包名，不能使用的名字，vscode 会标黄，强行 publish 会提示 400 
 > 发布之前需要提交或清除git工作区的内容，并且每次发布都要修改 version
+
 > 1. npm publish  (发布正式版本)
-> 2. npm publish --[tag] beta (发布测试版本)
+>
+> 2. npm publish --tag beta (发布测试版本)
+>
+> 3. npm publish --tag beta --access=public (发布测试版本)
+> 
+> 4. npm publish --access=public (发布正式版本)
+> 
+> 创建了组织，没有付费就要设置 --access=public 才能发布
+>
+> https://docs.npmjs.com/cli/publish
+
+- tag
+
+> https://docs.npmjs.com/cli/dist-tag
 
 ## smartBlog前后端接口
 ### article
