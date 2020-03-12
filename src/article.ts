@@ -9,6 +9,7 @@ import { IBase } from './base'
  * @property createTime 文章创建时间 YYYY-MM-DD HH:mm:ss
  * @property updateTime 文章更新时间 YYYY-MM-DD HH:mm:ss
  * @property version 版本
+ * @property state 文章状态
  * @property history 修改历史
  */
 export interface IArticle extends IBase {
@@ -20,5 +21,6 @@ export interface IArticle extends IBase {
     createTime: string
     updateTime: string
     version: number
+    state: 'doing' | 'file' | 'discard' | string
     history: IArticle[]
 }
