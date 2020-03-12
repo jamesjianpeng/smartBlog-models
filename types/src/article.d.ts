@@ -1,19 +1,21 @@
 import { IBase } from './base';
 /**
  * @interface 文章接口
- * @param title 文章标题
- * @param post 文章封面
- * @param content 文章内容
- * @param tag 文章标签
- * @param createTime 文章创建时间 YYYY-MM-DD HH:mm:ss
- * @param updateTime 文章更新时间 YYYY-MM-DD HH:mm:ss
- * @param version 版本
- * @param history 修改历史
+ * @property title 文章标题
+ * @property post 文章封面
+ * @property content 文章内容
+ * @property html 文章内容html
+ * @property tag 文章标签
+ * @property createTime 文章创建时间 YYYY-MM-DD HH:mm:ss
+ * @property updateTime 文章更新时间 YYYY-MM-DD HH:mm:ss
+ * @property version 版本
+ * @property history 修改历史
  */
 export interface IArticle extends IBase {
     title: string;
     post: string;
     content: string;
+    html: string;
     tag: string[];
     createTime: string;
     updateTime: string;

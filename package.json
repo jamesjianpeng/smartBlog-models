@@ -3,12 +3,11 @@
   "version": "1.0.9",
   "description": "",
   "keywords": [],
-  "main": "/types/src/index.ts",
-  "module": "/types/src/index.ts",
-  "typings": "/types/index.d.ts",
+  "main": "",
+  "module": "./index.ts",
+  "typings": "dist/types/smartblog-models.d.ts",
   "files": [
-    "types/",
-    "lib/"
+    "dist"
   ],
   "author": "jamesjianpeng jamesjianpeng@gmail.com",
   "repository": {
